@@ -1,0 +1,7 @@
+Bert_batch_30_samples_5000_seed_42 1 1
+Roberta_batch_32_samples_8000_seed_42 1 1
+Bert_batch_10_samples_5000_seed_42 1 1
+Bert_batch_20_samples_5000_seed_42 1 1
+Roberta_batch_8_samples_8000_seed_42 1 1
+T5_batch_4_samples_1500_seed_42 1 1
+T5_batch_7_samples_1500_seed_42 1 1

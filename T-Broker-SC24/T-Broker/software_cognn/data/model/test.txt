@@ -1,0 +1,2 @@
+Bert_batch_20_samples_5000_seed_42 1 1
+Bert_batch_20_samples_5000_seed_42 2 1

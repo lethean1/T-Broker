@@ -1,0 +1,2 @@
+Roberta_batch_32_samples_8000_seed_42 28.0 0
+TC_batch_16_samples_25000_seed_42 1 0

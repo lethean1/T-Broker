@@ -1,0 +1,2 @@
+TC_batch_16_samples_25000_seed_42  1 1
+GAT_dataset_DD_num_layers_8_500 1 1

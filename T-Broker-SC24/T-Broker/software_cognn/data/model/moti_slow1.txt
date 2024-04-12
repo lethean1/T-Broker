@@ -1,0 +1,2 @@
+GraphSAGE_dataset_Yeast_num_layers_3_400 1 1
+TC_batch_16_samples_25000_seed_42  1 1

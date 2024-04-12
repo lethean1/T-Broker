@@ -1,0 +1,2 @@
+GraphSAGE_dataset_Yeast_num_layers_8_250     20 1
+GraphSAGE_dataset_Yeast_num_layers_5_400     3 1

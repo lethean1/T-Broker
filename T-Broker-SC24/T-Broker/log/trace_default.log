@@ -1,0 +1,118 @@
+TIMESTAMP, [JOB][BEGIN], [GCN_dataset_cora_num_layers_6_4000]-0 begin, 1712887964.431226
+TIMESTAMP, [JOB][END], [GCN_dataset_cora_num_layers_6_4000]-0 finished, 1712887992.554780
+MainThread GCN training cora >>>>>>>>>> 1712887964.4312809
+04/12/2024 02:13:16 - WARNING - task.text_classification_main_glue - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/12/2024 02:13:16 - INFO - task.text_classification_main_glue - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/$TASK_NAME/runs/Apr12_02-13-16_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/$TASK_NAME/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=32,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/$TASK_NAME/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/default/default_main.py", line 50, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/default/default_main.py", line 41, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_batch_32_samples_25000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_base.py", line 10, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/text_classification_main_glue.py", line 297, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/cognn/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/cognn/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/cognn/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/cognn/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'glue' on the Hub (ConnectionError)

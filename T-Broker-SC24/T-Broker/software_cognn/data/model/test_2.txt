@@ -1,0 +1,4 @@
+GIN_dataset_citeseer_num_layers_3_2000 1 1
+GAT_dataset_amazon0601_num_layers_7_300 1 1
+GraphSAGE_dataset_Yeast_num_layers_7_300 1 1
+GraphSAGE_dataset_Yeast_num_layers_4_500 1 1

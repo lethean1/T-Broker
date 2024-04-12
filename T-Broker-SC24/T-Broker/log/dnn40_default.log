@@ -1,0 +1,8 @@
+TIMESTAMP, [JOB][BEGIN], [GCN_dataset_cora_num_layers_4_4000]-0 begin, 1712844889.232732
+TIMESTAMP, [JOB][END], [GCN_dataset_cora_num_layers_4_4000]-0 finished, 1712844908.123641
+MainThread GCN training cora >>>>>>>>>> 1712844889.232794
+TIMESTAMP, [JOB][BEGIN], [GIN_dataset_citeseer_num_layers_6_4000]-1 begin, 1712844911.453629
+TIMESTAMP, [JOB][END], [GIN_dataset_citeseer_num_layers_6_4000]-1 finished, 1712844945.744702
+MainThread GIN training citeseer >>>>>>>>>> 1712844911.45368
+before training
+time:33.26302099227905

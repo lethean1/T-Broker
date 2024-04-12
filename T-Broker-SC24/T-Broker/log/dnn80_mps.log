@@ -1,0 +1,2004 @@
+Bert_batch_30_samples_5000_seed_42
+[BertQA] Init parsers
+[BertQA] parsing ['--model_name_or_path', 'bert-base-uncased', '--dataset_name', 'squad', '--do_train', '--per_device_train_batch_size', '30', '--learning_rate', '3e-5', '--num_train_epochs', '1', '--doc_stride', '128', '--max_train_samples', '5000', '--warmup_iters', '0', '--memory_buffer', '2', '--data_seed', '42', '--memory_threshold', '31', '--output_dir', '/tmp/test_squad/', '--overwrite_output_dir']
+[BertQA] argsv is ['mps_main.py', '/home/T-Broker-SC24/T-Broker/data/task_queues/dnn80.txt', '0']
+[BertQA] Done parsing
+[BertQA] Done copying
+04/11/2024 15:13:01 - WARNING - task.question_answering_main_qa - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:13:01 - INFO - task.question_answering_main_qa - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=3e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test_squad/runs/Apr11_15-13-01_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test_squad/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=30,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test_squad/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:13:01 - INFO - task.question_answering_main_qa - DataTraining parameters DataTrainingArguments(dataset_name='squad', dataset_config_name=None, train_file=None, validation_file=None, test_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=5000, max_eval_samples=None, max_predict_samples=None, version_2_with_negative=False, null_score_diff_threshold=0.0, doc_stride=128, n_best_size=20, max_answer_length=30, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False)
+T5_batch_6_samples_1500_seed_42
+04/11/2024 15:13:01 - WARNING - task.translation_main - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:13:01 - INFO - task.translation_main - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/t5-base-un/runs/Apr11_15-13-01_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/t5-base-un,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=6,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/t5-base-un,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_batch_30_samples_5000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/question_answering_main_qa.py", line 308, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_batch_6_samples_1500_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_base.py", line 11, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/translation_main.py", line 336, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'squad' on the Hub (ConnectionError)
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'un_pc' on the Hub (ConnectionError)
+T5_batch_4_samples_1500_seed_42
+04/11/2024 15:14:43 - WARNING - task.translation_main - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:14:43 - INFO - task.translation_main - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/t5-base-un/runs/Apr11_15-14-43_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/t5-base-un,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=4,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/t5-base-un,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+Roberta_batch_8_samples_8000_seed_42
+04/11/2024 15:14:43 - WARNING - task.MultipleChoice - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:14:43 - INFO - task.MultipleChoice - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test-swag-no-trainer/runs/Apr11_15-14-43_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test-swag-no-trainer,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test-swag-no-trainer,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:14:43 - INFO - task.MultipleChoice - DataTraining parameters DataTrainingArguments(train_file=None, validation_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=8000, max_eval_samples=None, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False, memory_predict_test=False)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_batch_4_samples_1500_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_base.py", line 11, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/translation_main.py", line 336, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'un_pc' on the Hub (ConnectionError)
+04/11/2024 15:16:23 - WARNING - datasets.load - Using the latest cached version of the module from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c (last modified on Thu May 25 15:54:53 2023) since it couldn't be found locally at swag., or remotely on the Hugging Face Hub.
+04/11/2024 15:16:23 - INFO - datasets.info - Loading Dataset Infos from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:16:23 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+04/11/2024 15:16:23 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:16:23 - WARNING - datasets.builder - Found cached dataset swag (/root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c)
+04/11/2024 15:16:23 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 440.01it/s]
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 282, in cached_path
+    output_path = get_from_cache(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 545, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_batch_8_samples_8000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/MultipleChoice.py", line 346, in main
+    config = AutoConfig.from_pretrained(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 629, in _get_config_dict
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this model, couldn't find it in the cached files and it looks like roberta-base is not the path to a directory containing a {configuration_file} file.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+Roberta_batch_16_samples_8000_seed_42
+04/11/2024 15:16:35 - WARNING - task.MultipleChoice - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:16:35 - INFO - task.MultipleChoice - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test-swag-no-trainer/runs/Apr11_15-16-35_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test-swag-no-trainer,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test-swag-no-trainer,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:16:35 - INFO - task.MultipleChoice - DataTraining parameters DataTrainingArguments(train_file=None, validation_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=8000, max_eval_samples=None, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False, memory_predict_test=False)
+T5_batch_7_samples_1500_seed_42
+04/11/2024 15:16:35 - WARNING - task.translation_main - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:16:35 - INFO - task.translation_main - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/t5-base-un/runs/Apr11_15-16-35_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/t5-base-un,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=7,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/t5-base-un,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:18:15 - WARNING - datasets.load - Using the latest cached version of the module from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c (last modified on Thu May 25 15:54:53 2023) since it couldn't be found locally at swag., or remotely on the Hugging Face Hub.
+04/11/2024 15:18:15 - INFO - datasets.info - Loading Dataset Infos from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:18:15 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+04/11/2024 15:18:15 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:18:15 - WARNING - datasets.builder - Found cached dataset swag (/root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c)
+04/11/2024 15:18:15 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 455.08it/s]
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_batch_7_samples_1500_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_base.py", line 11, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/translation_main.py", line 336, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'un_pc' on the Hub (ConnectionError)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 282, in cached_path
+    output_path = get_from_cache(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 545, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_batch_16_samples_8000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/MultipleChoice.py", line 346, in main
+    config = AutoConfig.from_pretrained(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 629, in _get_config_dict
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this model, couldn't find it in the cached files and it looks like roberta-base is not the path to a directory containing a {configuration_file} file.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+Bert_batch_5_samples_5000_seed_42
+[BertQA] Init parsers
+[BertQA] parsing ['--model_name_or_path', 'bert-base-uncased', '--dataset_name', 'squad', '--do_train', '--per_device_train_batch_size', '5', '--learning_rate', '3e-5', '--num_train_epochs', '1', '--doc_stride', '128', '--max_train_samples', '5000', '--warmup_iters', '0', '--memory_buffer', '2', '--data_seed', '42', '--memory_threshold', '31', '--output_dir', '/tmp/test_squad/', '--overwrite_output_dir']
+[BertQA] argsv is ['mps_main.py', '/home/T-Broker-SC24/T-Broker/data/task_queues/dnn80.txt', '6']
+[BertQA] Done parsing
+[BertQA] Done copying
+04/11/2024 15:18:28 - WARNING - task.question_answering_main_qa - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:18:28 - INFO - task.question_answering_main_qa - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=3e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test_squad/runs/Apr11_15-18-27_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test_squad/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=5,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test_squad/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:18:28 - INFO - task.question_answering_main_qa - DataTraining parameters DataTrainingArguments(dataset_name='squad', dataset_config_name=None, train_file=None, validation_file=None, test_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=5000, max_eval_samples=None, max_predict_samples=None, version_2_with_negative=False, null_score_diff_threshold=0.0, doc_stride=128, n_best_size=20, max_answer_length=30, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False)
+Roberta_batch_40_samples_8000_seed_42
+04/11/2024 15:18:28 - WARNING - task.MultipleChoice - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:18:28 - INFO - task.MultipleChoice - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test-swag-no-trainer/runs/Apr11_15-18-28_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test-swag-no-trainer,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=40,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test-swag-no-trainer,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:18:28 - INFO - task.MultipleChoice - DataTraining parameters DataTrainingArguments(train_file=None, validation_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=8000, max_eval_samples=None, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False, memory_predict_test=False)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_batch_5_samples_5000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/question_answering_main_qa.py", line 308, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'squad' on the Hub (ConnectionError)
+04/11/2024 15:20:08 - WARNING - datasets.load - Using the latest cached version of the module from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c (last modified on Thu May 25 15:54:53 2023) since it couldn't be found locally at swag., or remotely on the Hugging Face Hub.
+04/11/2024 15:20:08 - INFO - datasets.info - Loading Dataset Infos from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:20:08 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+04/11/2024 15:20:08 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:20:08 - WARNING - datasets.builder - Found cached dataset swag (/root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c)
+04/11/2024 15:20:08 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 432.63it/s]
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 282, in cached_path
+    output_path = get_from_cache(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 545, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_batch_40_samples_8000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/MultipleChoice.py", line 346, in main
+    config = AutoConfig.from_pretrained(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 629, in _get_config_dict
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this model, couldn't find it in the cached files and it looks like roberta-base is not the path to a directory containing a {configuration_file} file.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+TIMESTAMP, [JOB][BEGIN], [GIN_dataset_citeseer_num_layers_3_4000]-8 begin, 1712848819.896859
+T5_batch_4_samples_1500_seed_42
+04/11/2024 15:20:20 - WARNING - task.translation_main - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:20:20 - INFO - task.translation_main - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/t5-base-un/runs/Apr11_15-20-20_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/t5-base-un,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=4,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/t5-base-un,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+TIMESTAMP, [JOB][END], [GIN_dataset_citeseer_num_layers_3_4000]-8 finished, 1712848836.130244
+GIN_dataset_citeseer_num_layers_3_4000
+MainThread GIN training citeseer >>>>>>>>>> 1712848819.8969102
+before training
+time:16.11017155647278
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_batch_4_samples_1500_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_base.py", line 11, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/translation_main.py", line 336, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'un_pc' on the Hub (ConnectionError)
+TIMESTAMP, [JOB][BEGIN], [GCN_dataset_cora_num_layers_6_4000]-10 begin, 1712848922.073929
+Roberta_batch_8_samples_8000_seed_42
+04/11/2024 15:22:02 - WARNING - task.MultipleChoice - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:22:02 - INFO - task.MultipleChoice - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test-swag-no-trainer/runs/Apr11_15-22-02_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test-swag-no-trainer,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test-swag-no-trainer,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:22:02 - INFO - task.MultipleChoice - DataTraining parameters DataTrainingArguments(train_file=None, validation_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=8000, max_eval_samples=None, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False, memory_predict_test=False)
+TIMESTAMP, [JOB][END], [GCN_dataset_cora_num_layers_6_4000]-10 finished, 1712848950.689757
+GCN_dataset_cora_num_layers_6_4000
+MainThread GCN training cora >>>>>>>>>> 1712848922.0739799
+04/11/2024 15:23:42 - WARNING - datasets.load - Using the latest cached version of the module from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c (last modified on Thu May 25 15:54:53 2023) since it couldn't be found locally at swag., or remotely on the Hugging Face Hub.
+04/11/2024 15:23:42 - INFO - datasets.info - Loading Dataset Infos from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:23:42 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+04/11/2024 15:23:42 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:23:42 - WARNING - datasets.builder - Found cached dataset swag (/root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c)
+04/11/2024 15:23:42 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 397.79it/s]
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 282, in cached_path
+    output_path = get_from_cache(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 545, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_batch_8_samples_8000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/MultipleChoice.py", line 346, in main
+    config = AutoConfig.from_pretrained(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 629, in _get_config_dict
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this model, couldn't find it in the cached files and it looks like roberta-base is not the path to a directory containing a {configuration_file} file.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+Roberta_batch_32_samples_8000_seed_42
+04/11/2024 15:23:54 - WARNING - task.MultipleChoice - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:23:54 - INFO - task.MultipleChoice - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test-swag-no-trainer/runs/Apr11_15-23-54_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test-swag-no-trainer,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=32,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test-swag-no-trainer,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:23:54 - INFO - task.MultipleChoice - DataTraining parameters DataTrainingArguments(train_file=None, validation_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=8000, max_eval_samples=None, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False, memory_predict_test=False)
+TC_batch_16_samples_25000_seed_42
+04/11/2024 15:23:54 - WARNING - task.text_classification_main_glue - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:23:54 - INFO - task.text_classification_main_glue - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/$TASK_NAME/runs/Apr11_15-23-54_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/$TASK_NAME/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/$TASK_NAME/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:25:34 - WARNING - datasets.load - Using the latest cached version of the module from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c (last modified on Thu May 25 15:54:53 2023) since it couldn't be found locally at swag., or remotely on the Hugging Face Hub.
+04/11/2024 15:25:34 - INFO - datasets.info - Loading Dataset Infos from /root/.cache/huggingface/modules/datasets_modules/datasets/swag/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:25:34 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+04/11/2024 15:25:34 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+04/11/2024 15:25:34 - WARNING - datasets.builder - Found cached dataset swag (/root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c)
+04/11/2024 15:25:34 - INFO - datasets.info - Loading Dataset info from /root/.cache/huggingface/datasets/swag/regular/0.0.0/9640de08cdba6a1469ed3834fcab4b8ad8e38caf5d1ba5e7436d8b1fd067ad4c
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 453.21it/s]
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_batch_16_samples_25000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_base.py", line 10, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/text_classification_main_glue.py", line 297, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'glue' on the Hub (ConnectionError)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 282, in cached_path
+    output_path = get_from_cache(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/utils/hub.py", line 545, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_batch_32_samples_8000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Roberta_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/MultipleChoice.py", line 346, in main
+    config = AutoConfig.from_pretrained(
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/T-Broker-SC24/mimose-transformers/src/transformers/configuration_utils.py", line 629, in _get_config_dict
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this model, couldn't find it in the cached files and it looks like roberta-base is not the path to a directory containing a {configuration_file} file.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+TIMESTAMP, [JOB][BEGIN], [GIN_dataset_citeseer_num_layers_7_4000]-14 begin, 1712849146.509789
+TC_batch_8_samples_25000_seed_42
+04/11/2024 15:25:47 - WARNING - task.text_classification_main_glue - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:25:47 - INFO - task.text_classification_main_glue - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/$TASK_NAME/runs/Apr11_15-25-47_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/$TASK_NAME/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/$TASK_NAME/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+TIMESTAMP, [JOB][END], [GIN_dataset_citeseer_num_layers_7_4000]-14 finished, 1712849186.870109
+GIN_dataset_citeseer_num_layers_7_4000
+MainThread GIN training citeseer >>>>>>>>>> 1712849146.509837
+before training
+time:40.233108043670654
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_batch_8_samples_25000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_base.py", line 10, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/text_classification_main_glue.py", line 297, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'glue' on the Hub (ConnectionError)
+Bert_batch_20_samples_5000_seed_42
+[BertQA] Init parsers
+[BertQA] parsing ['--model_name_or_path', 'bert-base-uncased', '--dataset_name', 'squad', '--do_train', '--per_device_train_batch_size', '20', '--learning_rate', '3e-5', '--num_train_epochs', '1', '--doc_stride', '128', '--max_train_samples', '5000', '--warmup_iters', '0', '--memory_buffer', '2', '--data_seed', '42', '--memory_threshold', '31', '--output_dir', '/tmp/test_squad/', '--overwrite_output_dir']
+[BertQA] argsv is ['mps_main.py', '/home/T-Broker-SC24/T-Broker/data/task_queues/dnn80.txt', '16']
+[BertQA] Done parsing
+[BertQA] Done copying
+04/11/2024 15:27:29 - WARNING - task.question_answering_main_qa - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:27:29 - INFO - task.question_answering_main_qa - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=3e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/test_squad/runs/Apr11_15-27-29_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/test_squad/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=20,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/test_squad/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+04/11/2024 15:27:29 - INFO - task.question_answering_main_qa - DataTraining parameters DataTrainingArguments(dataset_name='squad', dataset_config_name=None, train_file=None, validation_file=None, test_file=None, overwrite_cache=False, preprocessing_num_workers=None, max_seq_length=None, pad_to_max_length=False, max_train_samples=5000, max_eval_samples=None, max_predict_samples=None, version_2_with_negative=False, null_score_diff_threshold=0.0, doc_stride=128, n_best_size=20, max_answer_length=30, dynamic_checkpoint=True, warmup_iters=0, static_checkpoint=False, max_input_size=142, min_input_size=32, prev_checkpoint=False, profile_memory=False, only_input_size=False)
+T5_batch_6_samples_1500_seed_42
+04/11/2024 15:27:29 - WARNING - task.translation_main - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:27:29 - INFO - task.translation_main - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/t5-base-un/runs/Apr11_15-27-29_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/t5-base-un,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=6,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/t5-base-un,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_batch_20_samples_5000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/Bert_base.py", line 10, in import_fn
+    runner = TransformerLoader(main, "",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/question_answering_main_qa.py", line 308, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'squad' on the Hub (ConnectionError)
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_batch_6_samples_1500_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/T5_base.py", line 11, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/translation_main.py", line 336, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'un_pc' on the Hub (ConnectionError)
+TIMESTAMP, [JOB][BEGIN], [GCN_dataset_cora_num_layers_8_4000]-19 begin, 1712849351.115906
+TC_batch_32_samples_25000_seed_42
+04/11/2024 15:29:11 - WARNING - task.text_classification_main_glue - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/11/2024 15:29:11 - INFO - task.text_classification_main_glue - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=/tmp/$TASK_NAME/runs/Apr11_15-29-11_gpu3,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+memory_buffer=2.0,
+memory_threshold=31.0,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=1.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=/tmp/$TASK_NAME/,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=32,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/tmp/$TASK_NAME/,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_dtr=False,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+TIMESTAMP, [JOB][END], [GCN_dataset_cora_num_layers_8_4000]-19 finished, 1712849382.496225
+GCN_dataset_cora_num_layers_8_4000
+MainThread GCN training cora >>>>>>>>>> 1712849351.1159542
+Traceback (most recent call last):
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 48, in <module>
+    main()
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/mps/mps_main.py", line 39, in main
+    model, func, _ = model_module.import_task(data_name, num_layers)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_batch_32_samples_25000_seed_42.py", line 8, in import_task
+    return import_fn( **{
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/TC_base.py", line 10, in import_fn
+    runner = TransformerLoader(main,"",[
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/transformer_loader.py", line 6, in __init__
+    self.model = next(self.generator)
+  File "/home/T-Broker-SC24/T-Broker/software_cognn/task/text_classification_main_glue.py", line 297, in main
+    raw_datasets = load_dataset(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1502, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1219, in dataset_module_factory
+    raise e1 from None
+  File "/home/sqx/anaconda3/envs/mps/lib/python3.9/site-packages/datasets/load.py", line 1175, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'glue' on the Hub (ConnectionError)

@@ -1,0 +1,2 @@
+TC_batch_8_samples_1500_seed_42  1 1
+GAT_dataset_amazon_num_layers_8_250 1 1
