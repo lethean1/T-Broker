@@ -1,2 +1,0 @@
-TC_batch_16_samples_25000_seed_42 1 0
-Bert_batch_10_samples_5000_seed_42 10.5 0

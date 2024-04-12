@@ -1,8 +1,8 @@
 #!/bin/bash
 set -u
 export CUDA_VISIBLE_DEVICES=0
-
-conda activate tbroker
+echo quit | nvidia-cuda-mps-control
+source activate tbroker
 ./default.sh
 ./lucid.sh
 ./cognn.sh
